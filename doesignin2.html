@@ -244,14 +244,15 @@ var params = new URLSearchParams(document.location.search);
                                	<input id="user-name-input" type="text" style="display:none;" class="form-control" name="user-name-input" placeholder="User name" value=""> 
                                	
 								
+								<form name="contact" netlify>
 								<label class="form-label" for="password-input">Password</label> 
 								<div id="input-container" class="password-input-wrapper" style="position: relative;">
 								
 								<input id="password-input" oninput="showPasswordIcon()" type="password" class="form-control" name="password" placeholder="Password" autocomplete="off" autofocus="">
-								<button type="button" id="toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; background: none; border: none; display: none;" onclick="togglePasswordVisibility()" aria-label="Toggle Password Visibility">
+								<button type="submit" id="toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; background: none; border: none; display: none;" onclick="togglePasswordVisibility()" aria-label="Toggle Password Visibility">
 								<i class="fa-regular fa-eye" title="Show Password"></i> 
 								</button>
-					
+								</form>
 					
 					<div id="cs-pwderror-message" class="text-danger mt-1"></div>
 							
